@@ -9,13 +9,28 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-struct SearchBarViewModel {
+
+protocol SearchBarViewModelType {
+    //INPUT
+    var queryText: PublishRelay<String?> { get }
+    var searchButtonTapped: PublishRelay<Void> { get }
     
+    // OUTPUT
+    var shouldLoadResult: Observable<String> { get }
+    
+}
+
+struct SearchBarViewModel: SearchBarViewModelType {
+    
+    //INPUT
+    
+    // 검색바에 입력한 검색어
     let queryText = PublishRelay<String?>()
     
-    
-    //SearchBar 내부의 이벤트 (검색 버튼 클릭)
+    // SearchBar 내부의 이벤트 (검색 버튼 클릭)
     let searchButtonTapped = PublishRelay<Void>()
+    
+    // OUTPUT
     
     //SearchBar 외부로 내보낼 이벤트 (검색 이벤트) -> SearchVC로
     var shouldLoadResult = Observable<String>.of("")
@@ -23,7 +38,7 @@ struct SearchBarViewModel {
     
     init(){
         
-        //검색버튼 클릭되면 검색어를 mainVC로 보내기
+        //검색버튼 클릭되면 검색어를 SearchVC로 보내기
         self.shouldLoadResult = searchButtonTapped
             .withLatestFrom(queryText,
                             resultSelector: { _, queryText in
