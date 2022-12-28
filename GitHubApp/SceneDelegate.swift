@@ -13,10 +13,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(windowScene: windowScene)
+        
+        let rootViewController: TabBarViewController = TabBarViewController()
+        let rootNavigationViewController = UINavigationController(rootViewController: rootViewController)
+        rootNavigationViewController.navigationBar.barTintColor = .red
+        
+        /*
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .darkGray
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        rootNavigationViewController.navigationBar.standardAppearance = appearance
+        rootNavigationViewController.navigationBar.scrollEdgeAppearance = appearance
+        rootNavigationViewController.navigationBar.compactAppearance = appearance // For iPhone small navigation bar in landscape.
+        if #available(iOS 15.0, *) { // For compatibility with earlier iOS.
+            rootNavigationViewController.navigationBar.compactScrollEdgeAppearance = appearance
+        }
+         */
+        
+        window?.rootViewController = rootNavigationViewController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
