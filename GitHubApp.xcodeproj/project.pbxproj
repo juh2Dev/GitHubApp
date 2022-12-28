@@ -13,6 +13,8 @@
 		D068D9C5295BFFEE00F304B5 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C4295BFFEE00F304B5 /* RxRelay */; };
 		D068D9C7295BFFEE00F304B5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C6295BFFEE00F304B5 /* RxSwift */; };
 		D068D9CA295C001800F304B5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C9295C001800F304B5 /* SnapKit */; };
+		D068D9CD295C005900F304B5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D9CC295C005900F304B5 /* SearchBar.swift */; };
+		D068D9D0295C006C00F304B5 /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D9CF295C006C00F304B5 /* SearchBarViewModel.swift */; };
 		D0E13BA4295B12EE00EA0C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */; };
 		D0E13BA6295B12EE00EA0C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */; };
 		D0E13BA8295B12EE00EA0C89 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		D068D9BD295BFF2B00F304B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D068D9CC295C005900F304B5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D068D9CF295C006C00F304B5 /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
 		D0E13BA0295B12EE00EA0C89 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D068D9CB295C004A00F304B5 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				D068D9BD295BFF2B00F304B5 /* SearchViewController.swift */,
+				D068D9CE295C005B00F304B5 /* SearchBar */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		D068D9CE295C005B00F304B5 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				D068D9CC295C005900F304B5 /* SearchBar.swift */,
+				D068D9CF295C006C00F304B5 /* SearchBarViewModel.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
 		D0E13B97295B12EE00EA0C89 = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +91,7 @@
 				D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */,
 				D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */,
 				D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */,
-				D068D9BD295BFF2B00F304B5 /* SearchViewController.swift */,
+				D068D9CB295C004A00F304B5 /* SearchView */,
 				D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */,
 				D0E13BAC295B12EF00EA0C89 /* Assets.xcassets */,
 				D0E13BAE295B12EF00EA0C89 /* LaunchScreen.storyboard */,
@@ -163,6 +185,8 @@
 				D068D9C0295BFF4600F304B5 /* ProfileViewController.swift in Sources */,
 				D068D9BE295BFF2B00F304B5 /* SearchViewController.swift in Sources */,
 				D0E13BA6295B12EE00EA0C89 /* SceneDelegate.swift in Sources */,
+				D068D9CD295C005900F304B5 /* SearchBar.swift in Sources */,
+				D068D9D0295C006C00F304B5 /* SearchBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
