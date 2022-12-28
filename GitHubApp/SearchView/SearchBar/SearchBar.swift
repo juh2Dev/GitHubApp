@@ -33,7 +33,6 @@ class SearchBar: UISearchBar {
     
     func bind(_ viewModel: SearchBarViewModel){
         
-        
         // 입력한 검색어 -> queryText
         self.rx.text
             .bind(to: viewModel.queryText)
