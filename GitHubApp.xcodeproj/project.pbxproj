@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D068D9BE295BFF2B00F304B5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D9BD295BFF2B00F304B5 /* SearchViewController.swift */; };
+		D068D9C0295BFF4600F304B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */; };
 		D0E13BA4295B12EE00EA0C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */; };
 		D0E13BA6295B12EE00EA0C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */; };
 		D0E13BA8295B12EE00EA0C89 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D068D9BD295BFF2B00F304B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D0E13BA0295B12EE00EA0C89 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */,
 				D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */,
 				D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */,
+				D068D9BD295BFF2B00F304B5 /* SearchViewController.swift */,
+				D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */,
 				D0E13BAC295B12EF00EA0C89 /* Assets.xcassets */,
 				D0E13BAE295B12EF00EA0C89 /* LaunchScreen.storyboard */,
 				D0E13BB1295B12EF00EA0C89 /* Info.plist */,
@@ -140,6 +146,8 @@
 			files = (
 				D0E13BA8295B12EE00EA0C89 /* TabBarViewController.swift in Sources */,
 				D0E13BA4295B12EE00EA0C89 /* AppDelegate.swift in Sources */,
+				D068D9C0295BFF4600F304B5 /* ProfileViewController.swift in Sources */,
+				D068D9BE295BFF2B00F304B5 /* SearchViewController.swift in Sources */,
 				D0E13BA6295B12EE00EA0C89 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
