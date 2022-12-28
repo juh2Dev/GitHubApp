@@ -69,6 +69,22 @@
 			path = SearchBar;
 			sourceTree = "<group>";
 		};
+		D0D8D058295C4E0B0070FF4E /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		D0D8D059295C4E450070FF4E /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		D0E13B97295B12EE00EA0C89 = {
 			isa = PBXGroup;
 			children = (
@@ -90,9 +106,9 @@
 			children = (
 				D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */,
 				D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */,
-				D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */,
+				D0D8D058295C4E0B0070FF4E /* TabBarView */,
 				D068D9CB295C004A00F304B5 /* SearchView */,
-				D068D9BF295BFF4600F304B5 /* ProfileViewController.swift */,
+				D0D8D059295C4E450070FF4E /* ProfileView */,
 				D0E13BAC295B12EF00EA0C89 /* Assets.xcassets */,
 				D0E13BAE295B12EF00EA0C89 /* LaunchScreen.storyboard */,
 				D0E13BB1295B12EF00EA0C89 /* Info.plist */,
