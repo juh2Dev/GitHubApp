@@ -17,8 +17,22 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         attribute()
-    
+        bind()
        
+    }
+    
+    private func bind(viewModel: TabBarViewModel = TabBarViewModel()){
+        
+        searchView.bind(viewModel: viewModel.searchViewModel)
+        
+    }
+    
+    private func attribute(){
+        
+        
+        self.title = "GitHub"
+        self.view.backgroundColor = .white
+        
         // -----  탭바 설정 ----- //
         self.delegate = self
         
@@ -40,21 +54,6 @@ class TabBarViewController: UITabBarController {
                                         target: self,
                                         action: #selector(loginButtonTapped))
         navigationItem.rightBarButtonItem = loginButton
-        
-        bind()
-    }
-    
-    private func bind(viewModel: TabBarViewModel = TabBarViewModel()){
-        
-        searchView.bind(viewModel: viewModel.searchViewModel)
-        
-    }
-    
-    private func attribute(){
-        
-        
-        self.title = "GitHub"
-        self.view.backgroundColor = .white
         
     }
     
