@@ -20,8 +20,12 @@ class SearchViewController: UIViewController {
         layout()
     }
     
-    private func layout(){
+    func bind(viewModel: SearchViewModel){
         
+        searchBar.bind(viewModel.searchBarViewModel)
+    }
+    
+    private func layout(){
         
         view.addSubview(searchBar)
         searchBar.snp.makeConstraints {

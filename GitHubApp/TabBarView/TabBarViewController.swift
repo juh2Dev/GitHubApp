@@ -41,12 +41,12 @@ class TabBarViewController: UITabBarController {
         self.tabBar.tintColor = .white
         */
         
-        
-        
         searchView.tabBarItem = UITabBarItem(title: "search", image: UIImage(systemName: "magnifyingglass"), tag: 0)
         profileView.tabBarItem = UITabBarItem(title: "profile", image: UIImage(systemName: "person"), tag: 1)
         self.viewControllers = [searchView, profileView]
         
+        
+        // ---- 네비게이션 바 -----//
         
         // 로그인 버튼
         let loginButton = UIBarButtonItem(title: NSLocalizedString("Login", comment: ""),
