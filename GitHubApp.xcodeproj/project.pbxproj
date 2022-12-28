@@ -12,6 +12,7 @@
 		D068D9C3295BFFEE00F304B5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C2295BFFEE00F304B5 /* RxCocoa */; };
 		D068D9C5295BFFEE00F304B5 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C4295BFFEE00F304B5 /* RxRelay */; };
 		D068D9C7295BFFEE00F304B5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C6295BFFEE00F304B5 /* RxSwift */; };
+		D068D9CA295C001800F304B5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D068D9C9295C001800F304B5 /* SnapKit */; };
 		D0E13BA4295B12EE00EA0C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA3295B12EE00EA0C89 /* AppDelegate.swift */; };
 		D0E13BA6295B12EE00EA0C89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA5295B12EE00EA0C89 /* SceneDelegate.swift */; };
 		D0E13BA8295B12EE00EA0C89 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E13BA7295B12EE00EA0C89 /* TabBarViewController.swift */; };
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D068D9C7295BFFEE00F304B5 /* RxSwift in Frameworks */,
+				D068D9CA295C001800F304B5 /* SnapKit in Frameworks */,
 				D068D9C5295BFFEE00F304B5 /* RxRelay in Frameworks */,
 				D068D9C3295BFFEE00F304B5 /* RxCocoa in Frameworks */,
 			);
@@ -96,6 +98,7 @@
 				D068D9C2295BFFEE00F304B5 /* RxCocoa */,
 				D068D9C4295BFFEE00F304B5 /* RxRelay */,
 				D068D9C6295BFFEE00F304B5 /* RxSwift */,
+				D068D9C9295C001800F304B5 /* SnapKit */,
 			);
 			productName = GitHubApp;
 			productReference = D0E13BA0295B12EE00EA0C89 /* GitHubApp.app */;
@@ -127,6 +130,7 @@
 			mainGroup = D0E13B97295B12EE00EA0C89;
 			packageReferences = (
 				D068D9C1295BFFEE00F304B5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D068D9C8295C001800F304B5 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = D0E13BA1295B12EE00EA0C89 /* Products */;
 			projectDirPath = "";
@@ -378,6 +382,14 @@
 				minimumVersion = 6.5.0;
 			};
 		};
+		D068D9C8295C001800F304B5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -395,6 +407,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D068D9C1295BFFEE00F304B5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		D068D9C9295C001800F304B5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D068D9C8295C001800F304B5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
