@@ -18,6 +18,9 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         
         layout()
+        
+        repositoryTableView.delegate = self
+        repositoryTableView.dataSource = self
     }
     
     func bind(viewModel: SearchViewModel){
@@ -39,6 +42,18 @@ class SearchViewController: UIViewController {
             $0.leading.trailing.bottom.equalToSuperview()
         }
         
+    }
+    
+    
+}
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = RepositoryTableViewCell()
+        return cell
     }
     
     
